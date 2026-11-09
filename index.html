@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Những Ngày Xưa Thương Nhớ — Ký Ức Trường Đại Học Khoa Học Huế (1957 – 1986 – 2017 – 2027)</title>
+  <meta name="description" content="Không gian ký ức số và tranh minh họa màu nước chuyển thể nguyên bản hai tư liệu: Sách Lịch sử 60 năm Trường Đại học Khoa học Huế (1957–2017) và Ấn phẩm Khoảng trời màu xanh kỷ niệm 10 năm Trường Đại học Tổng hợp Huế (1976–1986), hướng về Ngày Nhà giáo Việt Nam 20/11/2026 và Kỷ niệm 70 năm thành lập Trường." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="font-scale-normal">
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
+
+  <!-- Interactive App Wrapper (hidden when printing via #print-stage) -->
+  <div id="app-shell" class="app-shell">
+    <!-- Top Commemorative Banner -->
+    <div class="top-commemorative-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-badge">
+          <span class="badge-dot"></span>
+          <span>Tri ân Ngày Nhà giáo Việt Nam 20/11/2026 &amp; Hướng tới Kỷ niệm 70 năm Trường ĐH Khoa học Huế (1957 – 2027)</span>
+        </div>
+        <div class="top-bar-controls" role="group" aria-label="Công cụ hiển thị và in ấn">
+          <div class="font-size-group" role="group" aria-label="Cỡ chữ đọc sách">
+            <span class="control-label">Cỡ chữ:</span>
+            <button type="button" class="btn-font-scale" data-scale="small" title="Chữ vừa">A-</button>
+            <button type="button" class="btn-font-scale active" data-scale="normal" title="Chữ tiêu chuẩn">A</button>
+            <button type="button" class="btn-font-scale" data-scale="large" title="Chữ lớn cho quý thầy cô">A+</button>
+            <button type="button" class="btn-font-scale" data-scale="xlarge" title="Chữ rất lớn">A++</button>
+          </div>
+          <button type="button" id="btn-open-print-modal" class="btn-top-print">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+              <rect x="6" y="14" width="12" height="8"/>
+            </svg>
+            <span>Bản in / Xuất PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header & Navigation -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand-identity" id="brand-home-trigger" role="button" tabindex="0" aria-label="Về trang chủ Ký ức Trường Đại học Khoa học Huế">
+          <div class="brand-arch-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="40" height="48" rx="2" stroke="#1E242B" stroke-width="2" fill="#FAF6EE"/>
+              <path d="M13 48V22C13 15.5 17 11 22 11C27 11 31 15.5 31 22V48H13Z" fill="#5CA8D6" stroke="#1E242B" stroke-width="1.6"/>
+              <path d="M6 48V15C9.5 15.5 13 18.5 13 23V48H6Z" fill="#FAF6EE" stroke="#1E242B" stroke-width="1.5"/>
+              <path d="M38 48V15C34.5 15.5 31 18.5 31 23V48H38Z" fill="#FAF6EE" stroke="#1E242B" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="brand-titles">
+            <span class="brand-eyebrow">Viện Đại học Huế (1957) • Đại học Tổng hợp Huế (1976) • Đại học Khoa học Huế (1994 – nay)</span>
+            <h1 class="brand-main-title">Những Ngày Xưa Thương Nhớ</h1>
+          </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Điều hướng chính">
+          <button type="button" class="nav-tab active" data-tab="overview">
+            <span class="nav-tab-num">01</span>
+            <span class="nav-tab-label">Không Gian Ký Ức &amp; Tranh Màu Nước</span>
+          </button>
+          <button type="button" class="nav-tab" data-tab="people">
+            <span class="nav-tab-num">02</span>
+            <span class="nav-tab-label">Tìm Bóng Dáng Thầy Cô <span id="people-count-badge" class="tab-pill">379</span></span>
+          </button>
+          <button type="button" class="nav-tab" data-tab="ktmx">
+            <span class="nav-tab-num">03</span>
+            <span class="nav-tab-label">Khoảng Trời Màu Xanh <span class="tab-pill">1976–1986</span></span>
+          </button>
+          <button type="button" class="nav-tab" data-tab="sach60">
+            <span class="nav-tab-num">04</span>
+            <span class="nav-tab-label">Lịch Sử 60 Năm ĐHKH <span class="tab-pill">1957–2017</span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+      <!-- TAB 1: OVERVIEW & WATERCOLOR GALLERY -->
+      <section id="tab-overview" class="tab-panel active" aria-labelledby="hero-heading">
+        <!-- Hero Section -->
+        <div class="hero-section">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <div class="hero-kicker">Kỷ vật tri ân hướng về Ngày Nhà giáo Việt Nam 20/11/2026 &amp; 70 năm Trường ĐHKH Huế</div>
+              <h2 id="hero-heading" class="hero-title">Tìm lại bóng dáng mình và đồng nghiệp những ngày xưa thương nhớ</h2>
+              <blockquote class="hero-dedication-box">
+                <p>
+                  “Trong không khí hướng về Ngày Nhà giáo Việt Nam 20/11/2026 và xa hơn là Kỷ niệm 70 năm Trường Đại học Khoa học (1957–2027), hai tư liệu quý <strong>«Trường Đại học Khoa học – Đại học Huế: 60 năm xây dựng và phát triển (1957–2017)»</strong> và ấn phẩm <strong>«Khoảng trời màu xanh – Tập thơ văn chào mừng 10 năm thành lập Trường Đại học Tổng hợp Huế (1976–1986)»</strong> được lưu giữ và chuyển thể thành không gian ký ức này, với hy vọng quý thầy cô sẽ thấy lại bóng dáng mình, đồng nghiệp và học trò của mình những ngày xưa thương nhớ.”
+                </p>
+              </blockquote>
+
+              <!-- Quick Search Box for Teachers & Colleagues -->
+              <div class="hero-search-card">
+                <label for="quick-person-search" class="hero-search-label">
+                  Tra cứu nhanh tên Thầy Cô, Cán bộ, Tác giả hoặc Kỷ niệm trong 2 tư liệu:
+                </label>
+                <div class="hero-search-input-wrap">
+                  <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  </svg>
+                  <input
+                    type="search"
+                    id="quick-person-search"
+                    class="hero-search-input"
+                    placeholder="Nhập tên thầy cô, đồng nghiệp (VD: Hoàng Đức Đạt, Nguyễn Quốc Lộc, Nguyễn Xuân Hòa, Phạm Khắc Liệu, Hồ Thế Hà...)"
+                    autocomplete="off"
+                  />
+                  <button type="button" id="btn-hero-search" class="btn-primary">Tra cứu</button>
+                </div>
+                <div id="quick-search-results" class="quick-search-dropdown" hidden></div>
+                <div class="hero-quick-tags">
+                  <span class="quick-tag-label">Gợi ý tra cứu nhanh:</span>
+                  <button type="button" class="chip-person-jump" data-person="Hoàng Đức Đạt">GS. Hoàng Đức Đạt</button>
+                  <button type="button" class="chip-person-jump" data-person="Nguyễn Quốc Lộc">GS. Nguyễn Quốc Lộc</button>
+                  <button type="button" class="chip-person-jump" data-person="Nguyễn Xuân Hòa">Thầy Nguyễn Xuân Hòa</button>
+                  <button type="button" class="chip-person-jump" data-person="Phạm Khắc Liệu">Thầy Phạm Khắc Liệu</button>
+                  <button type="button" class="chip-person-jump" data-person="Hồ Thế Hà">Thầy Hồ Thế Hà</button>
+                  <button type="button" class="chip-person-jump" data-person="Phạm Phú Phong">Thầy Phạm Phú Phong</button>
+                  <button type="button" class="chip-person-jump" data-person="Nguyễn Thanh">GS.TS. Nguyễn Thanh</button>
+                  <button type="button" class="chip-person-jump" data-person="Nguyễn Văn Đăng">PGS.TS. Nguyễn Văn Đăng</button>
+                  <button type="button" class="chip-person-jump" data-person="Hoàng Văn Hiển">PGS.TS. Hoàng Văn Hiển</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <figure class="hero-watercolor-frame">
+                <img
+                  src="assets/watercolors/wc_09_70_nam_dhkh_hue_2026.jpg"
+                  alt="Tranh màu nước khuôn viên Trường Đại học Khoa học Huế dưới mùa hoa phượng đỏ"
+                  class="hero-watercolor-img"
+                />
+                <figcaption class="hero-watercolor-caption">
+                  <span>Minh họa màu nước: Mái trường Đại học Khoa học Huế (77 Nguyễn Huệ) qua các thế hệ thầy trò dưới sắc phượng đỏ và khoảng trời màu xanh</span>
+                </figcaption>
+              </figure>
+
+              <!-- Two original book covers preview -->
+              <div class="two-books-showcase">
+                <div class="book-mini-card" data-goto-tab="ktmx">
+                  <img src="assets/ktmx_pages/page_001.jpg" alt="Bìa gốc ấn phẩm Khoảng trời màu xanh (1986) do họa sĩ Bửu Chỉ vẽ" class="book-mini-cover" />
+                  <div class="book-mini-meta">
+                    <span class="book-mini-year">Ấn phẩm năm 1986 • 147 trang</span>
+                    <h3>Khoảng Trời Màu Xanh</h3>
+                    <p>Tập thơ văn kỷ niệm 10 năm ĐH Tổng hợp Huế (1976–1986). Bìa: Họa sĩ Bửu Chỉ. Toàn văn 46 tác phẩm &amp; 45 chú thích tác giả.</p>
+                    <span class="book-mini-link">Đọc toàn văn &amp; xem bản gốc →</span>
+                  </div>
+                </div>
+
+                <div class="book-mini-card" data-goto-tab="sach60">
+                  <img src="assets/sach60_images/page_001_img_1.jpg" alt="Bìa gốc Sách Lịch sử 60 năm Trường Đại học Khoa học – Đại học Huế (1957–2017)" class="book-mini-cover" />
+                  <div class="book-mini-meta">
+                    <span class="book-mini-year">Xuất bản năm 2017 • 233 trang</span>
+                    <h3>Lịch Sử 60 Năm Trường ĐHKH Huế</h3>
+                    <p>Biên niên sử 3 thời kỳ (1957–1975, 1975–1994, 1994–2017), 7 phụ lục danh sách thầy cô, cán bộ &amp; 41 ảnh tư liệu quý.</p>
+                    <span class="book-mini-link">Đọc toàn văn &amp; tra cứu phụ lục →</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Historical Timeline Strip (1957 - 2027) -->
+        <div class="timeline-ribbon">
+          <div class="container">
+            <div class="section-header-compact">
+              <span class="section-eyebrow">Dòng chảy lịch sử 7 thập niên (1957 – 2027)</span>
+              <h2 class="section-title">Bốn cột mốc của một mái trường bên dòng Hương Giang</h2>
+            </div>
+            <div class="timeline-cards">
+              <article class="timeline-step">
+                <div class="timeline-year">1957 – 1975</div>
+                <h3 class="timeline-step-title">Đại học Khoa học &amp; Đại học Văn khoa – Viện Đại học Huế</h3>
+                <p>Khởi đầu từ Ban Văn khoa và Ban Toán học Đại cương (1/3/1957), phát triển thành hai phân khoa lớn tại cơ sở Morin và Lê Lợi, vừa đào tạo tri thức vừa rực lửa phong trào sinh viên đô thị Huế.</p>
+                <button type="button" class="btn-text-link" data-open-s60-sec="s60-c1-1-1">Đọc Chương 1 (Tr. 11–73) →</button>
+              </article>
+              <article class="timeline-step">
+                <div class="timeline-year">1975 – 1994</div>
+                <h3 class="timeline-step-title">Tiếp quản &amp; Thành lập Trường Đại học Tổng hợp Huế (27/10/1976)</h3>
+                <p>Những ngày đầu tiếp quản tháng 4/1975, quyết định 426/TTg thành lập Trường ĐHTH Huế, tuyển sinh Khóa 1 (1977) với 7 ngành học, vượt qua năm tháng gian khó và nở hoa kết trái trong <em>«Khoảng trời màu xanh»</em> (1986).</p>
+                <button type="button" class="btn-text-link" data-open-s60-sec="s60-c2-2-1">Đọc Chương 2 (Tr. 74–124) →</button>
+              </article>
+              <article class="timeline-step">
+                <div class="timeline-year">1994 – 2017</div>
+                <h3 class="timeline-step-title">Trường Đại học Khoa học – Đại học Huế thời kỳ đổi mới &amp; hội nhập</h3>
+                <p>Theo Nghị định 30/CP ngày 4/4/1994, Trường mang lại tên gọi Trường Đại học Khoa học thuộc Đại học Huế, mở rộng quy mô 18 khoa/bộ môn, đào tạo hơn 42.400 cử nhân, kỹ sư, kiến trúc sư, thạc sĩ, tiến sĩ.</p>
+                <button type="button" class="btn-text-link" data-open-s60-sec="s60-c3-3-1">Đọc Chương 3 (Tr. 125–177) →</button>
+              </article>
+              <article class="timeline-step highlight-step">
+                <div class="timeline-year">20/11/2026 – 2027</div>
+                <h3 class="timeline-step-title">Tri ân Nhà giáo Việt Nam &amp; Hướng tới Kỷ niệm 70 năm (1957–2027)</h3>
+                <p>Nối nhịp cầu ký ức giữa các thế hệ thầy cô, cán bộ và cựu sinh viên qua từng trang sách cũ, để mỗi người tìm thấy lại hình bóng thân thương của mình và đồng nghiệp dưới mái trường xưa.</p>
+                <button type="button" class="btn-text-link" data-goto-tab="people">Tìm bóng dáng thầy cô &amp; đồng nghiệp →</button>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 Watercolor Illustrations Gallery Section -->
+        <div class="watercolor-exhibition-section">
+          <div class="container">
+            <div class="section-header">
+              <div>
+                <span class="section-eyebrow">Phòng Tranh Ký Ức Màu Nước &amp; Tư Liệu Đối Chiếu</span>
+                <h2 class="section-title">12 Khung Trời Kỷ Niệm Minh Họa Từ Hai Tư Liệu Gốc</h2>
+                <p class="section-desc">
+                  Mỗi bức tranh màu nước dưới đây được vẽ cảm hứng trực tiếp từ những trang hồi ức, vần thơ, truyện ngắn trong <em>Khoảng trời màu xanh (1986)</em> và tư liệu lịch sử trong <em>Sách 60 năm Trường ĐHKH Huế (2017)</em>, đặt cạnh trích dẫn nguyên văn và ảnh tư liệu gốc.
+                </p>
+              </div>
+              <div class="section-actions">
+                <button type="button" class="btn-secondary" id="btn-print-watercolors">
+                  In Bộ sưu tập Tranh Màu Nước
+                </button>
+              </div>
+            </div>
+
+            <div id="watercolor-gallery-grid" class="watercolor-gallery-grid">
+              <!-- Populated by app.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: PEOPLE & COLLEAGUES DIRECTORY -->
+      <section id="tab-people" class="tab-panel" aria-labelledby="people-heading" hidden>
+        <div class="container section-container">
+          <div class="section-header">
+            <div>
+              <span class="section-eyebrow">Danh bạ Tra cứu Xuyên suốt Hai Tư liệu (1957 – 1986 – 2017)</span>
+              <h2 id="people-heading" class="section-title">Tìm Bóng Dáng Thầy Cô, Đồng Nghiệp &amp; Tác Giả</h2>
+              <p class="section-desc">
+                Tổng hợp và liên kết tự động <strong>379 thầy cô, cán bộ quản lý, giảng viên, nhân viên và tác giả/cựu sinh viên</strong> được ghi danh trong <em>Khoảng trời màu xanh (1986)</em> và <em>Sách Lịch sử 60 năm Trường ĐHKH Huế (1957–2017)</em>. Bấm vào tên mỗi người để xem toàn bộ những trang sách, dòng hồi ký, bài thơ hoặc bảng phụ lục có nhắc đến mình và đồng nghiệp.
+              </p>
+            </div>
+          </div>
+
+          <!-- Filter Bar -->
+          <div class="directory-filter-bar">
+            <div class="filter-search-box">
+              <label for="people-filter-input" class="sr-only">Tìm theo họ tên hoặc đơn vị</label>
+              <input
+                type="search"
+                id="people-filter-input"
+                class="filter-input"
+                placeholder="Gõ tên thầy cô, đồng nghiệp, khoa, phòng ban, khóa học (VD: Hoàng Đức Đạt, Ngữ văn, Hóa học, K1...)"
+              />
+            </div>
+            <div class="filter-pills" role="group" aria-label="Lọc theo nhóm tư liệu">
+              <button type="button" class="filter-pill active" data-pfilter="all">Tất cả (379)</button>
+              <button type="button" class="filter-pill" data-pfilter="both">Xuất hiện ở cả 2 sách</button>
+              <button type="button" class="filter-pill" data-pfilter="ktmx">Trong «Khoảng trời màu xanh» (1986)</button>
+              <button type="button" class="filter-pill" data-pfilter="leaders">Lãnh đạo Trường qua các thời kỳ</button>
+              <button type="button" class="filter-pill" data-pfilter="gspgs">Giáo sư / Phó Giáo sư / NGND / NGƯT</button>
+              <button type="button" class="filter-pill" data-pfilter="khoa-van-su">Khoa Ngữ văn &amp; Lịch sử</button>
+              <button type="button" class="filter-pill" data-pfilter="khoa-tu-nhien">Các Khoa Tự nhiên (Toán, Lý, Hóa, Sinh, Địa...)</button>
+            </div>
+          </div>
+
+          <div class="people-workspace">
+            <div id="people-list-grid" class="people-list-grid" role="list">
+              <!-- Populated by app.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: KHOẢNG TRỜI MÀU XANH (1976 - 1986) FULL READER -->
+      <section id="tab-ktmx" class="tab-panel" aria-labelledby="ktmx-heading" hidden>
+        <div class="container reader-container">
+          <!-- Book Banner -->
+          <div class="book-reader-banner ktmx-banner">
+            <div class="banner-cover-col">
+              <img src="assets/ktmx_pages/page_001.jpg" alt="Bìa ấn phẩm Khoảng trời màu xanh năm 1986 do họa sĩ Bửu Chỉ thiết kế" class="banner-cover-img" />
+            </div>
+            <div class="banner-info-col">
+              <span class="banner-kicker">Ấn phẩm Kỷ niệm 10 năm thành lập Trường Đại học Tổng hợp Huế (27/10/1976 – 27/10/1986)</span>
+              <h2 id="ktmx-heading" class="banner-book-title">Khoảng Trời Màu Xanh (1986)</h2>
+              <p class="banner-book-sub">
+                Công trình chào mừng 10 năm thành lập Trường Đại học Tổng hợp Huế của Khoa Ngữ văn và Đoàn TNCS Hồ Chí Minh Nhà trường • Chịu trách nhiệm xuất bản: <strong>GS. Hoàng Đức Đạt</strong> • Biên tập: <strong>Lê Tài Thuận – Nguyễn Thời – Phạm Phú Phong</strong> • Sửa bản in: <strong>Nguyễn Văn Hòa</strong> • Bìa: <strong>Bửu Chỉ</strong> • Trình bày: <strong>Lương Hà</strong>.
+              </p>
+              <div class="banner-stats-row">
+                <span class="stat-chip"><strong>147</strong> trang sách gốc</span>
+                <span class="stat-chip"><strong>3</strong> Hồi ký &amp; Ghi chép của các Thầy</span>
+                <span class="stat-chip"><strong>32</strong> Bài thơ</span>
+                <span class="stat-chip"><strong>10</strong> Truyện ngắn &amp; Bút ký</span>
+                <span class="stat-chip"><strong>45</strong> Tiểu sử tác giả</span>
+              </div>
+              <div class="banner-actions">
+                <button type="button" class="btn-secondary btn-sm" id="btn-view-ktmx-authors">Xem Chú thích 45 Tác giả (Tr. 138–141)</button>
+                <button type="button" class="btn-secondary btn-sm" id="btn-print-ktmx-current">In tác phẩm đang đọc</button>
+                <button type="button" class="btn-primary btn-sm" id="btn-print-ktmx-all">In trọn bộ «Khoảng trời màu xanh»</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Two-Column Reader Workspace -->
+          <div class="reader-layout">
+            <!-- Left Sidebar TOC -->
+            <aside class="reader-sidebar" aria-label="Mục lục Khoảng trời màu xanh">
+              <div class="sidebar-sticky">
+                <div class="sidebar-header">
+                  <h3>Mục lục Tác phẩm (47 mục)</h3>
+                  <button type="button" class="btn-mobile-toc-toggle" id="btn-toggle-ktmx-toc" aria-expanded="true">
+                    Ẩn/Hiện Mục lục
+                  </button>
+                </div>
+                <div class="sidebar-search-wrap">
+                  <input
+                    type="search"
+                    id="ktmx-search-input"
+                    class="sidebar-search-input"
+                    placeholder="Tìm tên bài, tác giả hoặc câu chữ trong sách..."
+                  />
+                </div>
+                <div class="sidebar-category-tabs" role="tablist">
+                  <button type="button" class="cat-chip active" data-kcat="all">Tất cả (47)</button>
+                  <button type="button" class="cat-chip" data-kcat="Hồi ký & Ghi chép">Hồi ký (4)</button>
+                  <button type="button" class="cat-chip" data-kcat="Thơ ca (32 bài)">Thơ (32)</button>
+                  <button type="button" class="cat-chip" data-kcat="Truyện ngắn & Bút ký (10 tác phẩm)">Văn xuôi (10)</button>
+                  <button type="button" class="cat-chip" data-kcat="authors">45 Tác giả</button>
+                </div>
+                <nav id="ktmx-toc-list" class="toc-list" aria-label="Danh sách tác phẩm Khoảng trời màu xanh">
+                  <!-- Populated by app.js -->
+                </nav>
+              </div>
+            </aside>
+
+            <!-- Right Reading Pane -->
+            <div class="reader-main-pane">
+              <article id="ktmx-article-view" class="book-article-sheet">
+                <!-- Populated by app.js -->
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: SÁCH 60 NĂM ĐHKH HUẾ (1957 - 2017) FULL READER -->
+      <section id="tab-sach60" class="tab-panel" aria-labelledby="sach60-heading" hidden>
+        <div class="container reader-container">
+          <!-- Book Banner -->
+          <div class="book-reader-banner s60-banner">
+            <div class="banner-cover-col">
+              <img src="assets/sach60_images/page_001_img_1.jpg" alt="Bìa Sách Trường Đại học Khoa học – Đại học Huế: 60 năm xây dựng và phát triển (1957–2017)" class="banner-cover-img" />
+            </div>
+            <div class="banner-info-col">
+              <span class="banner-kicker">Công trình Lịch sử Kỷ niệm 60 năm thành lập Trường (3/1957 – 3/2017) • NXB Đại học Huế</span>
+              <h2 id="sach60-heading" class="banner-book-title">Trường Đại Học Khoa Học – Đại Học Huế: 60 Năm Xây Dựng Và Phát Triển (1957 – 2017)</h2>
+              <p class="banner-book-sub">
+                Lời giới thiệu: <strong>PGS.TS. Hoàng Văn Hiển</strong> (Bí thư Đảng ủy, Hiệu trưởng) • Ban biên soạn: <strong>PGS.TS. Nguyễn Văn Đăng</strong> (Chủ biên), <strong>GS.TS. Nguyễn Quang Trung Tiến</strong>, <strong>ThS. Phạm Ngọc Bảo Liêm</strong>, <strong>ThS. Mai Văn Được</strong>.
+              </p>
+              <div class="banner-stats-row">
+                <span class="stat-chip"><strong>233</strong> trang nguyên bản</span>
+                <span class="stat-chip"><strong>3</strong> Chương lịch sử (1957–1975, 1975–1994, 1994–2017)</span>
+                <span class="stat-chip"><strong>7</strong> Phụ lục Bảng biểu danh sách</span>
+                <span class="stat-chip"><strong>41</strong> Ảnh tư liệu &amp; Chân dung lãnh đạo</span>
+              </div>
+              <div class="banner-actions">
+                <div class="page-jump-group">
+                  <label for="s60-page-jump-input">Đi tới trang sách gốc (1–233):</label>
+                  <input type="number" id="s60-page-jump-input" min="1" max="233" placeholder="Số trang..." class="page-jump-input" />
+                  <button type="button" id="btn-s60-page-jump" class="btn-secondary btn-sm">Mở trang</button>
+                </div>
+                <button type="button" class="btn-secondary btn-sm" id="btn-print-s60-current">In mục đang đọc</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Two-Column Reader Workspace -->
+          <div class="reader-layout">
+            <aside class="reader-sidebar" aria-label="Mục lục Sách 60 năm ĐHKH Huế">
+              <div class="sidebar-sticky">
+                <div class="sidebar-header">
+                  <h3>Mục lục Chương &amp; Phụ lục (23 phần)</h3>
+                  <button type="button" class="btn-mobile-toc-toggle" id="btn-toggle-s60-toc" aria-expanded="true">
+                    Ẩn/Hiện Mục lục
+                  </button>
+                </div>
+                <div class="sidebar-search-wrap">
+                  <input
+                    type="search"
+                    id="s60-search-input"
+                    class="sidebar-search-input"
+                    placeholder="Tìm sự kiện, tên thầy cô, khoa/phòng trong 233 trang..."
+                  />
+                </div>
+                <div id="s60-search-hits" class="s60-search-hits" hidden></div>
+                <nav id="s60-toc-list" class="toc-list" aria-label="Danh sách các phần Sách 60 năm">
+                  <!-- Populated by app.js -->
+                </nav>
+              </div>
+            </aside>
+
+            <div class="reader-main-pane">
+              <article id="s60-article-view" class="book-article-sheet">
+                <!-- Populated by app.js -->
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <h3 class="footer-title">Những Ngày Xưa Thương Nhớ — Ký Ức Trường Đại Học Khoa Học Huế</h3>
+          <p class="footer-text">
+            Trang web lưu trữ và minh họa màu nước chuyển thể trung thành 100% nội dung hai tư liệu lịch sử và văn học của Nhà trường:
+            <strong>«Khoảng trời màu xanh» (1976–1986)</strong> và <strong>«Trường Đại học Khoa học – Đại học Huế: 60 năm xây dựng và phát triển» (1957–2017)</strong>.
+          </p>
+          <p class="footer-text">
+            Thực hiện trong không khí hướng về <strong>Ngày Nhà giáo Việt Nam 20/11/2026</strong> và <strong>Kỷ niệm 70 năm Trường Đại học Khoa học – Đại học Huế (1957 – 2027)</strong>.
+          </p>
+        </div>
+        <div class="footer-col footer-links">
+          <h4>Truy cập nhanh</h4>
+          <ul>
+            <li><button type="button" class="footer-link-btn" data-goto-tab="overview">12 Tranh màu nước Ký ức</button></li>
+            <li><button type="button" class="footer-link-btn" data-goto-tab="people">Tra cứu 379 Thầy Cô &amp; Tác giả</button></li>
+            <li><button type="button" class="footer-link-btn" data-goto-tab="ktmx">Đọc trọn bộ «Khoảng trời màu xanh» (1986)</button></li>
+            <li><button type="button" class="footer-link-btn" data-goto-tab="sach60">Đọc trọn bộ «Sách Lịch sử 60 năm» (2017)</button></li>
+            <li><button type="button" class="footer-link-btn" id="btn-footer-print">Chuyển đổi sang Bản in / Xuất PDF</button></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- MODAL 1: PERSON MEMORY PROFILE MODAL -->
+  <div id="person-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="person-modal-title" hidden>
+    <div class="modal-card person-modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="modal-eyebrow">Hồ sơ Ký ức Thầy Cô, Cán bộ &amp; Tác giả</span>
+          <h3 id="person-modal-title" class="modal-title">Tên Thầy/Cô</h3>
+        </div>
+        <button type="button" class="btn-modal-close" id="btn-close-person-modal" aria-label="Đóng cửa sổ">✕</button>
+      </div>
+      <div id="person-modal-body" class="modal-body">
+        <!-- Populated by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: ORIGINAL SCANNED PAGE / IMAGE LIGHTBOX MODAL -->
+  <div id="image-lightbox-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="modal-card lightbox-modal-card">
+      <div class="modal-header">
+        <h3 id="lightbox-title" class="modal-title">Xem ảnh tư liệu / Trang sách gốc</h3>
+        <button type="button" class="btn-modal-close" id="btn-close-lightbox" aria-label="Đóng cửa sổ">✕</button>
+      </div>
+      <div class="modal-body lightbox-body">
+        <img id="lightbox-img" src="" alt="" class="lightbox-full-img" />
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: PRINT & PDF EXPORT CENTER -->
+  <div id="print-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="print-modal-title" hidden>
+    <div class="modal-card print-modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="modal-eyebrow">Thiết kế Dàn trang Sách in Chuẩn A4 / B5</span>
+          <h3 id="print-modal-title" class="modal-title">Chuyển Đổi Sang Bản In / Xuất File PDF Kỷ Niệm</h3>
+        </div>
+        <button type="button" class="btn-modal-close" id="btn-close-print-modal" aria-label="Đóng cửa sổ">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="print-modal-intro">
+          Trang web đã được tích hợp bộ quy tắc dàn trang in ấn tự động (<code>@media print</code>): tự động ẩn thanh công cụ, căn lề chuẩn sách in, giữ nguyên khổ thơ, bảng biểu và tranh màu nước minh họa. Quý thầy cô có thể chọn một trong các chế độ bản in dưới đây (hoặc nhấn <strong>Ctrl+P / Cmd+P</strong> bất kỳ lúc nào):
+        </p>
+        <div class="print-options-grid">
+          <div class="print-option-box">
+            <span class="print-opt-badge">Khuyên dùng làm Kỷ vật 20/11</span>
+            <h4>1. Ấn phẩm Kỷ niệm: 12 Tranh Màu Nước &amp; Hồi Ức Tiêu Biểu</h4>
+            <p>Gồm bìa kỷ niệm, lời tri ân 20/11/2026, toàn bộ 12 bức tranh màu nước kèm trích dẫn nguyên văn, và 3 bài hồi ký mở đầu của GS. Hoàng Đức Đạt, GS. Nguyễn Quốc Lộc, Thầy Nguyễn Xuân Hòa.</p>
+            <button type="button" class="btn-primary" data-print-mode="commemorative">In / Xuất PDF Ấn phẩm Kỷ niệm</button>
+          </div>
+
+          <div class="print-option-box">
+            <span class="print-opt-badge">Toàn văn Ấn phẩm 1986</span>
+            <h4>2. Trọn bộ «Khoảng Trời Màu Xanh (1976 – 1986)»</h4>
+            <p>In toàn văn 100% nội dung gốc gồm Lời giới thiệu, 3 bài Hồi ký/Ghi chép, 32 bài thơ, 10 truyện ngắn/bút ký, 45 mục Chú thích tác giả cùng tranh màu nước minh họa.</p>
+            <button type="button" class="btn-primary" data-print-mode="ktmx-full">In / Xuất PDF Trọn bộ Khoảng Trời Màu Xanh</button>
+          </div>
+
+          <div class="print-option-box">
+            <span class="print-opt-badge">Đang mở trên màn hình</span>
+            <h4>3. In Mục / Tác phẩm / Chương sách đang xem</h4>
+            <p>Chỉ in phần nội dung quý thầy cô đang mở đọc hiện tại (một bài thơ, một truyện ngắn, một chương lịch sử hoặc danh sách phụ lục) kèm tranh minh họa.</p>
+            <button type="button" class="btn-secondary" data-print-mode="current-view">In Nội dung Đang Xem</button>
+          </div>
+
+          <div class="print-option-box">
+            <span class="print-opt-badge">Toàn văn Sách Lịch sử 2017</span>
+            <h4>4. Trọn bộ «Sách Lịch Sử 60 Năm Trường ĐHKH Huế (1957 – 2017)»</h4>
+            <p>In toàn văn 23 phần (Lời giới thiệu, Chương 1, Chương 2, Chương 3, Kết luận, 7 Phụ lục bảng biểu và 41 ảnh tư liệu lịch sử).</p>
+            <button type="button" class="btn-secondary" data-print-mode="sach60-full">In / Xuất PDF Sách Lịch Sử 60 Năm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DEDICATED PRINT STAGE (Visible ONLY in @media print when triggered) -->
+  <div id="print-stage" class="print-stage" aria-hidden="true"></div>
+
+  <!-- Load compiled master data and application script -->
+  <script src="assets/data/data_bundle.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
